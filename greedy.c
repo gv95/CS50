@@ -38,15 +38,11 @@ int convert(float n)
 
 int calculate(int x)
 {
-    int quarters;
-    int dimes;
-    int nickels;
-    int pennies;
+    int quarters, dimes, nickels, pennies;
     quarters = x / 25;
     dimes = (x % 25) / 10;
     nickels = ((x % 25) % 10) / 5;
     pennies = ((x % 25) % 10) % 5;
-    int result;
-    result = quarters + dimes + nickels + pennies;
+    int result = quarters + dimes + nickels + pennies;
     return result;
 }
